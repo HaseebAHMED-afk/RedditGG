@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+body{
+    margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar{
+    width: 100%;
+    height: auto;
+    background-color: rgb(247, 247, 247);
+    text-align: center;
+    padding: 10px;
+    display: flex;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.reddit_logo{
+    width: 45px;
+    height: auto;
+    margin: auto;
+    margin-right: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.reddit-heading{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: 0;
 }
-
-.App-link {
-  color: #61dafb;
+.firstdiv{
+    text-align: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.desc{
+    margin: 150px auto;
+}
+.seconddiv{
+    text-align: center;
+}
+.cardDeck{
+    padding: 25px 10px;
+    justify-content: center;
+}
+.card{
+    padding: 0 !important;
+}
+.cat-card{
+    margin: 15px 10px;
 }
