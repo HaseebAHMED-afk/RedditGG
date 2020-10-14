@@ -1,0 +1,1 @@
+const url= `http://www.reddit.com/search.json?q=${data};` 
