@@ -1,8 +1,8 @@
 import axios from 'axios';
  
 
-const redditFetch = (name) => {
-   const data = axios.get('https://www.reddit.com/search.json?q=csgo;limit=50');
+const redditFetch = (id) => {
+   const data = axios.get(`https://www.reddit.com/search.json?q=${id};limit=50`);
     return data;
 }
 

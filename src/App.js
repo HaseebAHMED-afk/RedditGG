@@ -2,14 +2,11 @@ import React from 'react';
 import './App.css';
 import FirstDiv from './Components/FirstDiv';
 import SecondDiv from './Components/SecondDiv';
-import TopNav from './Components/TopNav'
-import redditFetch from './Components/redditFetch';
+import TopNav from './Components/TopNav';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import PostPage from './Components/PostPage';
 function App() {
 
-  const data = redditFetch();
-  console.log(data);
   return (
     <div >
     <Router>

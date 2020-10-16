@@ -1,6 +1,7 @@
 import React from "react";
 import {Link} from 'react-router-dom';
 import PostPage from './PostPage';
+import "../App.css"
 
 const SecondDiv = () => {
   return (
@@ -26,7 +27,7 @@ const SecondDiv = () => {
           />
           <div className="card-body">
             <h5>Dota2</h5>
-            <a>r/dota</a>
+            <Link to="/DotA2">r/DotA2</Link>
           </div>
         </div>
         <div className="card cat-card" style={{ width: "18rem" }}>
@@ -37,7 +38,7 @@ const SecondDiv = () => {
           />
           <div className="card-body">
             <h5>Fortnite</h5>
-            <a>r/fortnite</a>
+            <Link to="/FortNiteBR" >r/FortNiteBR</Link>
           </div>
         </div>
         <div className="card cat-card" style={{ width: "18rem" }}>
@@ -48,7 +49,7 @@ const SecondDiv = () => {
           />
           <div className="card-body">
             <h5>League Of Legends</h5>
-            <a>r/league</a>
+            <Link to="/leagueoflegends">r/leagueoflegends</Link>
           </div>
         </div>
         <div className="card cat-card" style={{ width: "18rem" }}>
@@ -59,7 +60,7 @@ const SecondDiv = () => {
           />
           <div className="card-body">
             <h5>StarCraft2</h5>
-            <a>r/sc2</a>
+            <Link to="/starcraft2">r/starsraft2</Link>
           </div>
         </div>
         <div className="card cat-card" style={{ width: "18rem" }}>
@@ -70,7 +71,7 @@ const SecondDiv = () => {
           />
           <div className="card-body">
             <h5>PlayerUnknown's Battlegrounds</h5>
-            <a>r/pubg</a>
+            <Link to="/PUBATTLEGROUNDS">r/pubg</Link>
           </div>
         </div>
         <div className="card cat-card" style={{ width: "18rem" }}>
@@ -80,8 +81,10 @@ const SecondDiv = () => {
             alt="overwatch"
           />
           <div className="card-body">
+          <Link to="/Overwatch">
             <h5>Overwatch</h5>
-            <a>r/overwatch</a>
+            <strong>r/overwatch</strong>
+            </Link>
           </div>
         </div>
         <div className="card cat-card" style={{ width: "18rem" }}>

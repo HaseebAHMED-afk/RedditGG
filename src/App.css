@@ -40,3 +40,8 @@ body{
 .cat-card{
     margin: 15px 10px;
 }
+Link,a:link{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
