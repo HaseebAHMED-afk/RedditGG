@@ -1,4 +1,7 @@
 import React from "react";
+import {Link} from 'react-router-dom';
+import PostPage from './PostPage';
+import {Routes,Route} from 'react-router-dom';
 
 const SecondDiv = () => {
   return (
@@ -13,7 +16,7 @@ const SecondDiv = () => {
           />
           <div className="card-body">
             <h5>Counter Strike: Global Offensive</h5>
-            <a>r/csgo</a>
+            <Link to="/csgo">r/csgo</Link>
           </div>
         </div>
         <div className="card cat-card" style={{ width: "18rem" }}>
@@ -160,6 +163,9 @@ const SecondDiv = () => {
           </div>
         </div>
       </div>
+      <Routes>
+        <Route path="/:id" element={<PostPage />}></Route>
+    </Routes>
     </div>
   );
 };
