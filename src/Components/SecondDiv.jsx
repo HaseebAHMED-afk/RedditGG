@@ -1,7 +1,6 @@
 import React from "react";
 import {Link} from 'react-router-dom';
 import PostPage from './PostPage';
-import {Routes,Route} from 'react-router-dom';
 
 const SecondDiv = () => {
   return (
@@ -163,9 +162,6 @@ const SecondDiv = () => {
           </div>
         </div>
       </div>
-      <Routes>
-        <Route path="/:id" element={<PostPage />}></Route>
-    </Routes>
     </div>
   );
 };
