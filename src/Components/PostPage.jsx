@@ -1,20 +1,35 @@
-import React from 'react'
-import { useParams } from 'react-router-dom'
-import redditFetch from './redditFetch';
-
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import axios from 'axios'
 
 const PostPage = () => {
-    const {id} = useParams();
+  const { id } = useParams();
+  const [Data, setData] = useState([]);
 
-    const data = redditFetch(id);
+  useEffect((id) => {
+    async function redditFetch(id) {
+      try {
+        const {
+          data: { data },
+        } = await axios.get(
+          `https://www.reddit.com/search.json?q=${id}&limit=50`
+        );
+        const { children } = data;
+        setData(children)
+      } catch (error) {
+        console.log(error);
+      }
+    }
 
-    console.log(data);
+    redditFetch(id)
+  }, []);
 
-    return (
-        <div>
-            hello {id}
-        </div>
-    )
-}
+  if(Data){
+    console.log(Data);
+  }
 
-export default PostPage
+
+  return <div>hello {id}</div>;
+};
+
+export default PostPage;
