@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from 'axios'
 
+
 const PostPage = () => {
   const { id } = useParams();
   const [Data, setData] = useState([]);
@@ -23,13 +24,23 @@ const PostPage = () => {
 
     redditFetch(id)
   }, []);
-
-  if(Data){
-    console.log(Data);
-  }
+    console.log(Data)
 
 
-  return <div>hello {id}</div>;
+  return <div className="posts">
+    <div className="postCard">
+      <div className="profile">
+      
+      </div>
+      <div className="caption">
+
+      </div>
+      <div className="media">
+
+      </div>
+    </div>
+
+  </div>;
 };
 
 export default PostPage;
