@@ -7,7 +7,7 @@ const PostPage = () => {
   const { id } = useParams();
   const [Data, setData] = useState([]);
 
-  useEffect((id) => {
+  useEffect(() => {
     async function redditFetch(id) {
       try {
         const {
@@ -21,24 +21,23 @@ const PostPage = () => {
         console.log(error);
       }
     }
-
     redditFetch(id)
-  }, []);
-    console.log(Data)
+  }, [id]);
 
 
   return <div className="posts">
-    <div className="postCard">
-      <div className="profile">
-      
-      </div>
-      <div className="caption">
 
-      </div>
-      <div className="media">
-
-      </div>
-    </div>
+  {
+    Data.map((data,i) => <div className="card postCard" key={i}>
+  <div className="card-body">
+    <h5 className="card-title">{data.data.author_flair_richtext.map(title => title.t)}</h5>
+    <h6 className="card-subtitle mb-2 text-muted">{data.data.subreddit_name_prefixed}</h6>
+    <p className="card-text">{data.data.title}</p>
+    <img className="card-img-bottom" src={data.data.thumbnail} alt="post_img"/>
+  </div>
+</div> )
+  }
+   
 
   </div>;
 };
