@@ -36,4 +36,4 @@ jobs:
         run: npm run build
         
       - name: Deploy to Surge
-        run: surge ./build redditggbyhaseebahmed.surge.sh --token${{secrets.SURGE_SECRET}}
+        run: surge ./build redditggbyhaseebahmed.surge.sh --token ${{secrets.SURGE_SECRET}}
