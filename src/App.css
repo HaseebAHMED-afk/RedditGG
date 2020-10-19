@@ -76,3 +76,12 @@ Link,a:link{
     background-color: red;
     height: 20rem;
 }
+footer{
+    text-align: center;
+    background-color: #EF4A23 ;
+    padding: 25px;
+    color: white;
+}
+p{
+    margin: 0;  
+}
