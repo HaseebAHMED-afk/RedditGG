@@ -23,12 +23,21 @@ body{
 }
 .firstdiv{
     text-align: center;
+    background-color: #EF4A23;
+    width: 100%;
+    height: auto;
+    padding: 150px;
 }
 .desc{
-    margin: 150px auto;
+    margin: auto;
+    color: white;
 }
 .seconddiv{
     text-align: center;
+}
+.looky{
+    text-align: center;
+    margin: 50px auto;
 }
 .cardDeck{
     padding: 25px 10px;

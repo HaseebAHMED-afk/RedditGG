@@ -5,7 +5,7 @@ import "../App.css"
 const SecondDiv = () => {
   return (
     <div className="seconddiv">
-      <h1>Take A Look</h1>
+      <h1 className="looky">Take A Look</h1>
       <div className="row row-cols-1 row-cols-md-2 cardDeck">
         <div className="card cat-card" style={{ width: "18rem" }}>
         <Link to="/csgo">
@@ -73,7 +73,7 @@ const SecondDiv = () => {
           </Link>
         </div>
         <div className="card cat-card" style={{ width: "18rem" }}>
-        <Link to="/PUBATTLEGROUNDS">
+        <Link to="/pubg">
           <img
             src="https://wallpapercave.com/wp/wp2462450.jpg"
             className="card-img-top"

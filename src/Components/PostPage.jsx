@@ -33,12 +33,10 @@ const PostPage = () => {
     <h5 className="card-title">{data.data.author_flair_richtext.map(title => title.t)}</h5>
     <h6 className="card-subtitle mb-2 text-muted">{data.data.subreddit_name_prefixed}</h6>
     <p className="card-text">{data.data.title}</p>
-    <img className="card-img-bottom" src={data.data.thumbnail} alt="post_img"/>
+    <img className="card-img-bottom content-img" src={data.data.thumbnail} alt="post_img"/>
   </div>
 </div> )
   }
-   
-
   </div>;
 };
 
